@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.garson',
+  id: 'garson',
   appPath: 'src',
   appResourcesPath: 'App_Resources',
   android: {

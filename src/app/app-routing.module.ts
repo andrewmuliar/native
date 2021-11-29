@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core'
 import { Routes } from '@angular/router'
 import { NativeScriptRouterModule } from '@nativescript/angular'
 
-import { ItemsComponent } from './item/items.component'
-import { ItemDetailComponent } from './item/item-detail.component'
+import { CategoryComponent } from './category/category-list.component'
+import { ProductComponent } from './product/product.component'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/items', pathMatch: 'full' },
-  { path: 'items', component: ItemsComponent },
-  { path: 'item/:id', component: ItemDetailComponent },
+  { path: '', redirectTo: '/category', pathMatch: 'full' },
+  { path: 'category', component: CategoryComponent },
+  { path: 'category/:category_id', component: ProductComponent },
 ]
 
 @NgModule({
